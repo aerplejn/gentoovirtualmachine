@@ -1,13 +1,13 @@
-# Gentoo Deployment Script
+# Gentoo deployment script
 
 This script facilitates the installation of Gentoo Linux on your system, either from a live CD or any live OS environment. You can download this script using links or `wget`.
 
-## Installation Guide
+## Installation guide
 
-1. **Run the Installation Script**:
+1. **Run the installation script**:
    - Execute `setup_gentoo.sh`. This will guide you through disk provisioning or allow you to use an auto-provisioned format.
 
-2. **Configuration Prompts**:
+2. **Configuration prompts**:
    - The script will ask you several configuration questions:
      - Whether to replace OpenSSL with LibreSSL (Note: LibreSSL support is being deprecated).
      - Enable LTO (Link Time Optimization) and Graphite optimizations.
@@ -15,7 +15,7 @@ This script facilitates the installation of Gentoo Linux on your system, either 
      - Select the platform for which you're optimizing the installation.
    - After your inputs, the script will proceed to compile and set up your system. This process might take several minutes to hours, depending on your hardware, as Gentoo requires everything to be compiled from source.
 
-3. **Post-Installation**:
+3. **Post-installation**:
    - Once the script finishes, you'll have a fully functioning Gentoo system with a minimal kernel configuration and USE flags.  
    - Exit the chroot environment, remove the live CD, and reboot your system.
 
@@ -29,18 +29,18 @@ This script facilitates the installation of Gentoo Linux on your system, either 
      - **Shells**: `zsh` and `bash`
      - **Editor**: `vim`
 
-5. **Software Installation**:
+5. **Software installation**:
    - Run `install_software.sh` to install additional software I use on Gentoo.
 
 ## TODOs
 
-- **Continued Testing for Optimizations**:
+- **Continued testing for optimizations**:
   - Further test LTO & Graphite optimizations. The script currently uses the [Gentoo LTO Overlay](https://github.com/InBetweenNames/gentooLTO), which is still under development. There might be compilation issues as this overlay evolves.
 
-- **Browser Support**:
+- **Browser support**:
   - Add a browser compatible with LTO and LibreSSL. Although earlier versions of Firefox worked, recent builds do not support this setup.
 
-- **Deprecation of LibreSSL**:
+- **Deprecation of libreSSL**:
   - Plan to remove LibreSSL functionality from the script as it's no longer being integrated into Gentoo and is largely abandoned by distribution developers.
 
 ## Notes
@@ -55,4 +55,4 @@ This script facilitates the installation of Gentoo Linux on your system, either 
 
 ---
 
-Feel free to fork this repository, customize the script to better fit your needs, or share this with others interested in Gentoo Linux.
+Feel free to fork this repository, customize the script to better fit your needs, or share this with others interested in Gentoo.
